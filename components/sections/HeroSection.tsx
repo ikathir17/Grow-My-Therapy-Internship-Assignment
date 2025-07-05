@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const HeroSection = () => (
   <section
@@ -26,18 +27,18 @@ const HeroSection = () => (
       overflow: 'hidden',
       backgroundColor: '#f8f9fa' /* Fallback color */
     }}>
-      <img
+      <Image
         src="/assets/hero.jpg"
         alt="Dr. Serena Blake, Clinical Psychologist"
+        fill
+        sizes="100vw"
         style={{
-          width: '100%',
-          height: '100%',
           objectFit: 'cover',
           objectPosition: 'center',
           filter: 'brightness(0.92)',
           transform: 'scale(1.05)'
         }}
-        loading="eager"
+        priority
       />
       {/* Subtle overlay for text readability */}
       <div style={{
@@ -101,7 +102,7 @@ const HeroSection = () => (
           margin: '0 auto 1.5rem',
           textShadow: '1px 1px 2px rgba(0,0,0,0.3)'
         }}>
-          Providing compassionate, evidence-based therapy to help you navigate life's challenges and achieve meaningful change.
+          Providing compassionate, evidence-based therapy to help you navigate life&apos;s challenges and achieve meaningful change.
         </p>
       </div>
       

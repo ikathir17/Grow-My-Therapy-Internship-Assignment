@@ -57,10 +57,6 @@ const Navbar = () => {
     document.body.style.overflow = 'unset';
   };
   
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-    document.body.style.overflow = 'unset';
-  };
 
   const navLinks: NavLink[] = [
     { name: 'Home', href: '#hero' },

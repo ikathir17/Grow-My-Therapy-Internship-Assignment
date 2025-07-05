@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const AboutSection = () => (
   <section
@@ -56,18 +57,18 @@ const AboutSection = () => (
         About Dr. Serena Blake
       </h2>
       {/* Mobile image (shows only on mobile) */}
-      <div className="about-img-mobile" style={{ display: 'none' }}>
-        <img
+      <div className="about-img-mobile" style={{ display: 'none', position: 'relative', width: '100%', maxWidth: '350px', height: 'auto', aspectRatio: '350/520' }}>
+        <Image
           src="/assets/Profile.jpg"
           alt="Dr. Serena Blake - Clinical Psychologist"
+          fill
+          sizes="(max-width: 900px) 90vw, 350px"
           style={{
-            width: '100%',
-            maxWidth: '350px',
-            height: 'auto',
             objectFit: 'cover',
             borderRadius: '12px',
             boxShadow: '0 4px 32px rgba(0,0,0,0.10)'
           }}
+          priority={false}
         />
       </div>
       <p style={{ color: '#666', fontSize: '1.15rem', lineHeight: 1.7 }}>
@@ -75,17 +76,18 @@ const AboutSection = () => (
       </p>
     </div>
     {/* Desktop image (shows only on desktop) */}
-    <div className="about-img-desktop" style={{ flex: '0 0 400px', display: 'flex', justifyContent: 'center', alignItems: 'flex-start', marginRight: '5vw' }}>
-      <img
+    <div className="about-img-desktop" style={{ flex: '0 0 400px', display: 'flex', justifyContent: 'center', alignItems: 'flex-start', marginRight: '5vw', position: 'relative', width: '400px', height: '520px' }}>
+      <Image
         src="/assets/Profile.jpg"
         alt="Dr. Serena Blake - Clinical Psychologist"
+        fill
+        sizes="400px"
         style={{
-          width: '400px',
-          height: '520px',
           objectFit: 'cover',
           borderRadius: '12px',
           boxShadow: '0 4px 32px rgba(0,0,0,0.10)'
         }}
+        priority={false}
       />
     </div>
   </section>

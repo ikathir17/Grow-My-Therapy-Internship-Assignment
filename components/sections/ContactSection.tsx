@@ -48,7 +48,7 @@ const ContactSection = () => (
       zIndex: 1
     }}>
       <p style={{ marginBottom: '1.5rem', lineHeight: 1.6 }}>
-        I'm currently accepting new clients for both in-person and telehealth sessions. Please reach out to schedule a free 15-minute phone consultation to see if we're a good fit.
+        I&apos;m currently accepting new clients for both in-person and telehealth sessions. Please reach out to schedule a free 15-minute phone consultation to see if we&apos;re a good fit.
       </p>
       
       <div style={{ marginBottom: '1.5rem' }}>
