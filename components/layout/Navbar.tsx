@@ -1,5 +1,6 @@
 import React, { useState, useEffect, CSSProperties } from 'react';
-import { FaBars, FaTimes, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import Image from 'next/image';
 
 // Extend CSSProperties to include CSS custom properties
 interface CustomCSSProperties extends CSSProperties {
@@ -98,15 +99,19 @@ const Navbar = () => {
             flex: '1 0 auto',
             maxWidth: 'fit-content'
           }}>
-            <img 
-              src="/assets/logo.png" 
-              alt="Dr. Serena Blake - Clinical Psychologist" 
-              style={{
-                height: '45px',
-                width: 'auto',
-                objectFit: 'contain'
-              }}
-            />
+            <div style={{ position: 'relative', height: '45px', width: 'auto', minWidth: '150px' }}>
+              <Image
+                src="/assets/logo.png"
+                alt="Dr. Serena Blake - Clinical Psychologist"
+                fill
+                sizes="(max-width: 768px) 150px, 200px"
+                style={{
+                  objectFit: 'contain',
+                  objectPosition: 'left center'
+                }}
+                priority
+              />
+            </div>
           </a>
           
           {/* Spacer to push desktop nav to the right */}
