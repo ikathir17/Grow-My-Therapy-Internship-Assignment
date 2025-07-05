@@ -11,16 +11,11 @@ interface ContactFormInputs {
 }
 
 const ContactSection: React.FC = () => {
-  const [isMobile, setIsMobile] = useState(true); // Default to mobile first
-
   useEffect(() => {
     // This code runs only on the client side
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      // Handle resize logic here if needed
     };
-
-    // Set initial value
-    handleResize();
 
     // Add event listener
     window.addEventListener('resize', handleResize);
@@ -28,13 +23,6 @@ const ContactSection: React.FC = () => {
     // Cleanup
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-  // Base link styles
-  const linkStyle: React.CSSProperties = {
-    color: '#4a6a85',
-    textDecoration: 'none',
-    borderBottom: '1px solid transparent',
-    transition: 'all 0.2s ease',
-  };
 
   return (
     <section id="contact" className="contact-section">
@@ -44,7 +32,7 @@ const ContactSection: React.FC = () => {
       <div className="contact-container">
         <div className="contact-info">
           <p className="contact-text">
-            I'm currently accepting new clients for both in-person and telehealth sessions. 
+            I&apos;m currently accepting new clients for both in-person and telehealth sessions. 
             Please fill out the form or contact me directly to schedule a free 15-minute consultation.
           </p>
           
