@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionContainer from '@/components/sections/SectionContainer';
+import Image from 'next/image';
 
 const services = [
   {
@@ -111,12 +111,12 @@ const ServicesSection = () => (
               e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.12)';
             }}
           >
-            <img
+            <Image
               src={service.image}
               alt={service.title}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               style={{
-                width: '100%',
-                height: '100%',
                 objectFit: 'cover',
                 objectPosition: 'center',
                 transition: 'transform 0.5s ease',
@@ -127,7 +127,7 @@ const ServicesSection = () => (
               onMouseOut={(e) => {
                 e.currentTarget.style.transform = 'scale(1)';
               }}
-              loading="lazy"
+              priority={false}
             />
           </div>
           <h3

@@ -41,7 +41,7 @@ const PoliciesSection = () => {
             </p>
           </div>
           <p style={{ color: '#666', lineHeight: '1.6' }}>
-            <strong>Insurance:</strong> I am an out-of-network provider. While I don't accept insurance directly, 
+            <strong>Insurance:</strong> I am an out-of-network provider. While I don&apos;t accept insurance directly, 
             I can provide you with a superbill that you can submit to your insurance company for potential reimbursement. 
             Please check with your insurance provider about your out-of-network mental health benefits.
           </p>
@@ -98,7 +98,7 @@ const PoliciesSection = () => {
             Cancellation Policy
           </h3>
           <p style={{ color: '#666', lineHeight: '1.6' }}>
-            I require 24 hours' notice for cancellations. Late cancellations will be charged the full session fee.
+            I require 24 hours&apos; notice for cancellations. Late cancellations will be charged the full session fee.
           </p>
         </div>
       </div>

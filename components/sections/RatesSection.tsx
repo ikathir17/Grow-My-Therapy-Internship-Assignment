@@ -58,7 +58,7 @@ const RatesSection = () => (
           color: '#333',
           maxWidth: '600px'
         }}>
-          I am an out-of-network provider. While I don't accept insurance directly, 
+          I am an out-of-network provider. While I don&apos;t accept insurance directly, 
           I can provide you with a superbill that you can submit to your insurance 
           company for potential reimbursement.
         </p>
@@ -127,7 +127,7 @@ const RatesSection = () => (
             position: 'relative',
             fontFamily: 'Georgia, serif'
           }}>
-            "I have come to believe that caring for myself is not self-indulgent. Caring for myself is an act of survival."
+            &ldquo;I have come to believe that caring for myself is not self-indulgent. Caring for myself is an act of survival.&rdquo;
           </p>
           <p style={{
             fontSize: '1.2rem',
