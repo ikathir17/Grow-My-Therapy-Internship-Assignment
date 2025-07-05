@@ -71,3 +71,145 @@ input, textarea {
   font-family: inherit;
   font-size: 1rem;
 }
+
+/* Contact Section */
+.contact-section {
+  background: #fcfcf7;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.contact-background {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 320px;
+  height: 240px;
+  background-image: url('/assets/extras/ex1.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+  filter: grayscale(80%);
+  transform: rotate(5deg);
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-info {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+}
+
+.contact-details {
+  margin-bottom: 2rem;
+}
+
+.contact-details p {
+  margin: 0.75rem 0;
+}
+
+.contact-form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form-heading {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: #4a6a85;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: #4a6a85;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact-subheading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2c4a5c;
+}
+
+.contact-text {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+}
+
+.contact-link {
+  color: #4a6a85;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.contact-link:hover {
+  color: #2c4a6b;
+  border-bottom-color: #4a6a85;
+}
+
+.contact-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-copyright {
+  color: #888;
+  font-size: 0.9rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+}
